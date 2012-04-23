@@ -1,0 +1,8 @@
+content   FWget                         content/
+skin          FWget  classic/1.0   skin/
+locale      FWget  en-US            locale/en-US/
+
+overlay   chrome://browser/content/browser.xul                                                        chrome://FWget/content/toolbarOverlay.xul
+overlay   chrome://browser/content/browser.xul                                                        chrome://FWget/content/browserOverlay.xul
+overlay	  chrome://mozapps/content/downloads/unknownContentType.xul	   chrome://FWget/content/saveas.xul
+style         chrome://global/content/customizeToolbar.xul                                         chrome://FWget/skin/overlay.css

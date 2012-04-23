@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet type="text/css" href="chrome://global/skin/" ?>
+<?xml-stylesheet type="text/css" href="chrome://FWget/skin/overlay.css" ?>
+
+<!DOCTYPE overlay SYSTEM "chrome://FWget/locale/browserOverlay.dtd">
+
+<overlay id="FWget-browser-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script type="application/x-javascript"  src="Message.js" />
+
+  <stringbundleset id="stringbundleset">
+    <stringbundle id="FWget-string-bundle"
+      src="chrome://FWget/locale/browserOverlay.properties" />
+  </stringbundleset>
+  
+  <menupopup id="menu_ToolsPopup">
+    <menu id="FWget-menu" label="FWget"
+      accesskey="&FWget.main.accesskey;"
+      insertbefore="devToolsEndSeparator">
+      <menupopup>
+        <menuitem id="FWget-menu-item"
+          label="FWget"
+          accesskey="&FWget.sub.accesskey;"
+          onclick="menuscript.BrowserOverlay.menu(event);" />
+      </menupopup>
+    </menu>
+  </menupopup>
+  
+  <vbox id="appmenuSecondaryPane">
+    <menu id="FWget-menu-2" label="FWget"
+      accesskey="&FWget.main.accesskey;"
+      insertafter="appmenu_addons">
+      <menupopup>
+        <menuitem id="FWget-menu-item-2"
+          label="FWget"
+          accesskey="&FWget.sub.accesskey;"
+          onclick="menuscript.BrowserOverlay.menu(event);" />
+      </menupopup>
+    </menu>
+  </vbox>
+</overlay>

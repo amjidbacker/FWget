@@ -1,0 +1,18 @@
+
+#FWget-toolbar-button
+{
+  list-style-image: url("chrome://FWget/skin/toolbar-button.png");
+  -moz-image-region: rect(0px 26px 26px 0px);
+}
+#FWget-toolbar-button:hover
+{
+  -moz-image-region: rect(24px 24px 48px  0px);
+}
+[iconsize="small"] #FWget-toolbar-button
+{
+  -moz-image-region: rect( 0px 40px 16px 24px);
+}
+[iconsize="small"] #FWget-toolbar-button:hover
+{
+  -moz-image-region: rect(24px 40px 40px 24px);
+}

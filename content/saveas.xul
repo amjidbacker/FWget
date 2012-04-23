@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet type="text/css" href="chrome://global/skin/" ?>
+<?xml-stylesheet type="text/css" href="chrome://FWget/skin/browserOverlay.css" ?>
+
+<!DOCTYPE overlay SYSTEM "chrome://FWget/locale/browserOverlay.dtd">
+  
+<overlay id="FWgetDownloadSaveAs" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+    <script type="application/x-javascript" src="chrome://FWget/content/saveas.js"/>
+    <script type="application/x-javascript" src="firegetCommon.js"/>
+
+	<radiogroup id="mode">
+		<vbox insertbefore="save" id="FWgetcontainer" flex="1">
+			<hbox flex="1">
+		<radio id="FWget" label="FWget" />
+		</hbox>
+		
+		</vbox>
+	</radiogroup>
+</overlay>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://FWget/skin/overlay.css" type="text/css"?>
+
+<!DOCTYPE overlay SYSTEM "chrome://FWget/locale/browserOverlay.dtd">
+
+<overlay id="FWget-overlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script type="application/x-javascript" src="Message.js"/>
+
+  <toolbarpalette id="BrowserToolbarPalette">
+     <toolbarbutton id="FWget-toolbar-button"
+        autoCheck="true"
+        label="FWget"
+        tooltiptext="FWget"
+        oncommand="menuscript.BrowserOverlay.menu(event);"
+        class="toolbarbutton-1 chromeclass-toolbar-additional"/>
+  </toolbarpalette>
+</overlay>
